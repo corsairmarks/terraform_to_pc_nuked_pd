@@ -1,0 +1,1217 @@
+# dry
+terraform_link = {
+	from = pc_badlands
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_coastal
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_hadesert
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_med
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_mesa
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_oasis
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_outback
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_prairie
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_sandsea
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_semiarid
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_steppe
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_veld
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+# wet
+terraform_link = {
+	from = pc_aquatic
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_cascadian
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_cenote
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_desertislands
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_fog
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_forest
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_hajungle
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_lake
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_mangrove
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_retinal
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_subarctic
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_tepid
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_wetswamp
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+# cold
+terraform_link = {
+	from = pc_aeolian
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_antarctic
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_basalt
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_boreal
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_duneforest
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_frozen_desert
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_glacial
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_highland
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_mud
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_swamp
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_mushroom
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_snow
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			basic_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+	}
+}
+
+# hostile
+terraform_link = {
+	from = pc_pdhive1
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_hostile_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_hostile_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+		from = {
+			reroll_deposits = yes
+			clear_blockers = yes
+		}
+	}
+	ai_weight = {
+		weight = 3
+		modifier = {
+			weight = 2
+			is_hive_empire = no
+			special_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+		modifier = {
+			factor = 0
+			is_hive_empire = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_pdhive2
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_hostile_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_hostile_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+		from = {
+			reroll_deposits = yes
+			clear_blockers = yes
+		}
+	}
+	ai_weight = {
+		weight = 3
+		modifier = {
+			weight = 2
+			is_hive_empire = no
+			special_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+		modifier = {
+			factor = 0
+			is_hive_empire = yes
+		}
+	}
+}
+
+# PD rare
+terraform_link = {
+	from = pc_gaia
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+# unhabitable
+
+
+
+
+# similar
+terraform_link = {
+	from = pc_hothouse
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_similar_candidate_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_similar_candidate_duration
+	potential = {
+		from = { has_modifier = terraforming_candidate }
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		has_technology = tech_climate_restoration
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 3
+			owner_main_species = { is_nuked_species = yes }
+		}
+	}
+}
+
+
+
+
+# opposit
+terraform_link = {
+	from = pc_barren_cold
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_opposite_candidate_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_opposite_candidate_duration
+	potential = {
+		from = { has_modifier = terraforming_candidate }
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		has_technology = tech_climate_restoration
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 2
+			owner_main_species = { is_nuked_species = yes }
+		}
+	}
+}

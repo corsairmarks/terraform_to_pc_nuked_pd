@@ -1,0 +1,119 @@
+# assumes the terraformer meets technology/species requirements
+# this = planet
+eligible_pc_nuked_terraform_habitable = {
+	OR = {
+		# TODO
+		# PD basic dry
+		is_planet_class = pc_badlands
+		is_planet_class = pc_coastal
+		is_planet_class = pc_hadesert
+		is_planet_class = pc_med
+		is_planet_class = pc_mesa
+		is_planet_class = pc_oasis
+		is_planet_class = pc_outback
+		is_planet_class = pc_prairie
+		is_planet_class = pc_sandsea
+		is_planet_class = pc_semiarid
+		is_planet_class = pc_steppe
+		is_planet_class = pc_veld
+
+		# PD basic wet
+		is_planet_class = pc_aquatic
+		is_planet_class = pc_aquaticcold
+		is_planet_class = pc_aquatichot
+		is_planet_class = pc_cascadian
+		is_planet_class = pc_cenote
+		is_planet_class = pc_desertislands
+		is_planet_class = pc_fog
+		is_planet_class = pc_forest
+		is_planet_class = pc_hajungle
+		is_planet_class = pc_lake
+		is_planet_class = pc_mangrove
+		is_planet_class = pc_retinal
+		is_planet_class = pc_subarctic
+		is_planet_class = pc_tepid
+		is_planet_class = pc_wetswamp
+
+		# PD basic cold
+		is_planet_class = pc_aeolian
+		is_planet_class = pc_antarctic
+		is_planet_class = pc_basalt
+		is_planet_class = pc_boreal
+		is_planet_class = pc_duneforest
+		is_planet_class = pc_frozen_desert
+		is_planet_class = pc_glacial
+		is_planet_class = pc_highland
+		is_planet_class = pc_mud
+		is_planet_class = pc_mushroom
+		is_planet_class = pc_snow
+		is_planet_class = pc_swamp
+
+		# PD special
+		# TODO need to add links
+		# pc_reef - habitable cost
+		# pc_lichen
+		# pc_aquifer
+		# pc_lanthanide
+		# pc_supercon
+		# pc_glacio
+		# pc_eyeball
+		# pc_rogue
+		# pc_coral
+		# pc_storm
+		# pc_megaflora
+		# pc_salt
+		# pc_primal
+		# pc_karst
+		# pc_superhabitable
+		# pc_tidallylocked - not allowed since there isn't a corresponding pc_nuked
+		# pc_geothermal
+		# pc_biolumen
+
+		# TODO planetary habitats - they can convert into other types (see links for extra stuff!
+
+		# TODO some/all exotics - at least pc_irradiated
+
+		# built-in basic
+		is_planet_class = pc_alpine
+		is_planet_class = pc_arctic
+		is_planet_class = pc_arid
+		is_planet_class = pc_continental
+		is_planet_class = pc_desert
+		is_planet_class = pc_gaia
+		is_planet_class = pc_ocean
+		is_planet_class = pc_savannah
+		is_planet_class = pc_tropical
+		is_planet_class = pc_tundra
+	}
+}
+
+# assumes the terraformer meets technology/species requirements
+# this = planet
+eligible_pc_nuked_terraform_hostile = {
+	OR = {
+		# TODO
+		# PD hostile
+		is_planet_class = pc_pdhive1
+		is_planet_class = pc_pdhive2
+
+		# built-in hostile
+		is_planet_class = pc_hive
+		is_planet_class = pc_machine
+	}
+}
+
+# assumes the terraformer meets technology/species requirements
+# this = planet
+eligible_pc_nuked_terraform_unhabitable = {
+	has_modifier = terraforming_candidate
+	OR = {
+		# TODO
+		# PD unhabitable
+		is_planet_class = pc_hothouse
+
+		# built-in unhabitable
+		is_planet_class = pc_barren
+		is_planet_class = pc_barren_cold
+		is_planet_class = pc_frozen
+	}
+}
