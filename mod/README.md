@@ -11,7 +11,6 @@ Adds terraforming links to change many any colonizable, non-artificial planet cl
 ## What Can't I Nuke?
 
 * as with the main mod, ecumenopolis planets cannot be converted (directly) to Tomb Worlds
-* as in Planetary Diversity, you cannot convert exotic (generally low-habitability) alternate atmospheric-composition planets cannot be terraformed
 * Planetary Diversity adds special habitable classes intended only for use as special graphical variations - this mod does not add terraform links, and neither does PD provide any to/from the "display only" planet classes
 * Shrouded worlds (and variations) - the Shroud is amused by your pitiful displays of material power
 * Most unhabitable planet classes (Hothouses are able to be terraformed when the Terraforming Candidate modifier is present)
@@ -36,6 +35,10 @@ Only adds new terraforming links, so it should not conflict with other mods that
 * [Planetary Diversity - Exotic Worlds](https://steamcommunity.com/sharedfiles/filedetails/?id=1732437279)
 * [Planetary Diversity - Planetary Habitats](https://steamcommunity.com/sharedfiles/filedetails/?id=1878751971) *****MAYBE
 * [Planetary Diversity - Shroud Worlds](https://steamcommunity.com/sharedfiles/filedetails/?id=1960179456)
+
+### Not Included in "Subtle Polish"
+
+This mod is intentionally not included in my modpack [Subtle Polish: A Collection of Fixes and Enhancements](https://steamcommunity.com/sharedfiles/filedetails/?id=2522974089) because it a compatibility patch for a specific, additional mod.  Will otherwise function alongside Subtle Polish when combined with Planetary Diversity.
 
 ## Known Issues
 
