@@ -71,8 +71,6 @@ eligible_pc_nuked_terraform_habitable = {
 		is_planet_class = pc_cold_gaia
 		is_planet_class = pc_hot_gaia
 
-		# TODO some/all exotics - at least pc_irradiated
-
 		# built-in basic
 		is_planet_class = pc_alpine
 		is_planet_class = pc_arctic
@@ -104,26 +102,34 @@ eligible_pc_nuked_terraform_hostile = {
 # assumes the terraformer meets technology/species requirements
 # this = planet
 eligible_pc_nuked_terraform_unhabitable = {
-	AND = {
-		has_modifier = terraforming_candidate
-		OR = {
-			# PD unhabitable
-			is_planet_class = pc_hothouse
+	OR = {
+		AND = {
+			has_modifier = terraforming_candidate
+			OR = {
+				# PD unhabitable
+				is_planet_class = pc_hothouse
 
-			# built-in unhabitable
-			is_planet_class = pc_barren
-			is_planet_class = pc_barren_cold
-			is_planet_class = pc_frozen
+				# built-in unhabitable
+				is_planet_class = pc_barren
+				is_planet_class = pc_barren_cold
+				is_planet_class = pc_frozen
+			}
 		}
-	}
-	AND = {
-		has_modifier = hab_terraforming_candidate
-		OR = {
-			# PD planetary habitats
-			is_planet_class = pc_pd_hothouse_hab
-			is_planet_class = pc_pd_barren_hab
-			is_planet_class = pc_pd_barren_cold_hab
-			is_planet_class = pc_pd_frozen_hab
+		AND = {
+			has_modifier = hab_terraforming_candidate
+			OR = {
+				# PD planetary habitats
+				is_planet_class = pc_pd_hothouse_hab
+				is_planet_class = pc_pd_barren_hab
+				is_planet_class = pc_pd_barren_cold_hab
+				is_planet_class = pc_pd_frozen_hab
+			}
 		}
+		# PD exotic
+		is_planet_class = pc_ammonia
+		is_planet_class = pc_ash
+		is_planet_class = pc_methane
+		is_planet_class = pc_sulfur
+		is_planet_class = pc_irradiated
 	}
 }
