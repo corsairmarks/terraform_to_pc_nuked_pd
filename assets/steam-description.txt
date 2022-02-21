@@ -1,9 +1,53 @@
+[h1]Overview[/h1]
+Have you found yourself in a diverse galaxy, full of worlds that would better off with a healthy [strike]glassing[/strike] "terrestrial resurfacing" from orbit?  Those colorful skies are far too cheerful to allow for proper introspection on the dead - and how could they ever be home without comfortingly high levels are background radiation?  This mod is an expansion of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2625663437]"Terraform" to Tomb World[/url] that adds compatibility with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=819148835]Planetary Diversity[/url] (and its submods).
 
+Suggested by [url=https://steamcommunity.com/profiles/76561198276935683]NivMizzet Firemind[/url].
 
+[h1]Changes[/h1]
+Adds terraforming links to change many any colonizable, non-artificial planet classes from Planetary Diversity (and its submods) into a tomb world ([b]pc_nuked[/b]).
+
+[h2]What Can't I Nuke?[/h2]
+[list]
+[*]as with the main mod, ecumenopolis planets cannot be converted (directly) to Tomb Worlds
+[*]Planetary Diversity adds special habitable classes intended only for use as special graphical variations - this mod does not add terraform links, and neither does PD provide any to/from the "display only" planet classes
+[*]Shrouded worlds - the Shroud is amused by your pitiful displays of material power
+[*]Most unhabitable planet classes (Hothouses are able to be terraformed when the Terraforming Candidate modifier is present)
+[*]All unique planet classes (Crystal, etc.) - PD does not allow terraforming these planet classes
+[*]Tidally-locked planets - they don't have an equivalent for a tidally-locked Tomb World
+[/list]
+[h2]Compatibility[/h2]
+Built for Stellaris version 3.3 "Libra."  Not compatible with achievements.
+
+Only adds new terraforming links, so it should not conflict with other mods that do not also add terraforming links from and to the same planet classes.  This submod adds compatibility for Planetary Diversity.
+
+[h3]Required Dependency Mods[/h3]
+[list]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2625663437]"Terraform" to Tomb World[/url] for the events that apply the "terraforming" graphics and framework code to make this mod work
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=819148835]Planetary Diversity[/url] to provide new planet classes - otherwise this mod does nothing
+[/list]
+[h3]Recommended Companion Mods[/h3]
+[list]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1740165239]Planetary Diversity - Unique Worlds[/url]
+[*][url=https://steamcommunity.com/workshop/filedetails/?id=1732447147]Planetary Diversity - More Arcologies[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1732437279]Planetary Diversity - Exotic Worlds[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1878751971]Planetary Diversity - Planetary Habitats[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1960179456]Planetary Diversity - Shroud Worlds[/url]
+[/list]
+[h3]Not Included in "Subtle Polish"[/h3]
+This mod is intentionally not included in my modpack [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2522974089]Subtle Polish: A Collection of Fixes and Enhancements[/url] because it a compatibility patch for a specific, additional mod.  Will otherwise function alongside Subtle Polish when combined with Planetary Diversity.
+
+[h2]Known Issues[/h2]
+Overrides three scripted triggers and one scripted effect from "'Terraform' to Tomb World" in order to add Planetary Diversity support.  Expect to see four entries in the error.log file similar to these:
+[code]
+[00:40:19][game_singleobjectdatabase.h:147]: Object with key: eligible_pc_nuked_terraform_habitable already exists, using the one at  file: common/scripted_triggers/terraform_to_pc_nuked_scripted_triggers.txt line: 82
+[00:40:19][game_singleobjectdatabase.h:147]: Object with key: eligible_pc_nuked_terraform_hostile already exists, using the one at  file: common/scripted_triggers/terraform_to_pc_nuked_scripted_triggers.txt line: 99
+[00:40:19][game_singleobjectdatabase.h:147]: Object with key: eligible_pc_nuked_terraform_unhabitable already exists, using the one at  file: common/scripted_triggers/terraform_to_pc_nuked_scripted_triggers.txt line: 108
+[00:40:19][game_singleobjectdatabase.h:147]: Object with key: post_terraform_to_pc_nuked already exists, using the one at  file: common/scripted_effects/terraform_to_pc_nuked_scripted_effects.txt line: 3
+[/code]
 [h2]Changelog[/h2]
 See [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/]Change Notes[/url]
 
 [h2]Source Code[/h2]
-Hosted on [url=https://github.com/corsairmarks/terraform_to_pc_nuked]GitHub[/url]
+Hosted on [url=https://github.com/corsairmarks/terraform_to_pc_nuked_pd]GitHub[/url]
 
 [url=https://discord.gg/bHVez2C][img]https://i.imgur.com/4Und3QN.png[/img][/url]

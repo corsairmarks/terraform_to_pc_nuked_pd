@@ -12,14 +12,14 @@ Adds terraforming links to change many any colonizable, non-artificial planet cl
 
 * as with the main mod, ecumenopolis planets cannot be converted (directly) to Tomb Worlds
 * Planetary Diversity adds special habitable classes intended only for use as special graphical variations - this mod does not add terraform links, and neither does PD provide any to/from the "display only" planet classes
-* Shrouded worlds (and variations) - the Shroud is amused by your pitiful displays of material power
+* Shrouded worlds - the Shroud is amused by your pitiful displays of material power
 * Most unhabitable planet classes (Hothouses are able to be terraformed when the Terraforming Candidate modifier is present)
 * All unique planet classes (Crystal, etc.) - PD does not allow terraforming these planet classes
 * Tidally-locked planets - they don't have an equivalent for a tidally-locked Tomb World
 
 ## Compatibility
 
-Built for Stellaris version 3.2.\* "Herbert."  Not compatible with achievements.
+Built for Stellaris version 3.3 "Libra."  Not compatible with achievements.
 
 Only adds new terraforming links, so it should not conflict with other mods that do not also add terraforming links from and to the same planet classes.  This submod adds compatibility for Planetary Diversity.
 
@@ -33,7 +33,7 @@ Only adds new terraforming links, so it should not conflict with other mods that
 * [Planetary Diversity - Unique Worlds](https://steamcommunity.com/sharedfiles/filedetails/?id=1740165239)
 * [Planetary Diversity - More Arcologies](https://steamcommunity.com/workshop/filedetails/?id=1732447147)
 * [Planetary Diversity - Exotic Worlds](https://steamcommunity.com/sharedfiles/filedetails/?id=1732437279)
-* [Planetary Diversity - Planetary Habitats](https://steamcommunity.com/sharedfiles/filedetails/?id=1878751971) *****MAYBE
+* [Planetary Diversity - Planetary Habitats](https://steamcommunity.com/sharedfiles/filedetails/?id=1878751971)
 * [Planetary Diversity - Shroud Worlds](https://steamcommunity.com/sharedfiles/filedetails/?id=1960179456)
 
 ### Not Included in "Subtle Polish"
@@ -42,10 +42,13 @@ This mod is intentionally not included in my modpack [Subtle Polish: A Collectio
 
 ## Known Issues
 
-Overrides three scripted triggers from "Terraform" to Tomb World in order to add Planetary Diversity support.  Expect to see three entris in the error.log file similar to these:
+Overrides three scripted triggers and one scripted effect from "'Terraform' to Tomb World" in order to add Planetary Diversity support.  Expect to see four entries in the error.log file similar to these:
 
 ```
-TODO examples
+[00:40:19][game_singleobjectdatabase.h:147]: Object with key: eligible_pc_nuked_terraform_habitable already exists, using the one at  file: common/scripted_triggers/terraform_to_pc_nuked_scripted_triggers.txt line: 82
+[00:40:19][game_singleobjectdatabase.h:147]: Object with key: eligible_pc_nuked_terraform_hostile already exists, using the one at  file: common/scripted_triggers/terraform_to_pc_nuked_scripted_triggers.txt line: 99
+[00:40:19][game_singleobjectdatabase.h:147]: Object with key: eligible_pc_nuked_terraform_unhabitable already exists, using the one at  file: common/scripted_triggers/terraform_to_pc_nuked_scripted_triggers.txt line: 108
+[00:40:19][game_singleobjectdatabase.h:147]: Object with key: post_terraform_to_pc_nuked already exists, using the one at  file: common/scripted_effects/terraform_to_pc_nuked_scripted_effects.txt line: 3
 ```
 
 ## Changelog
