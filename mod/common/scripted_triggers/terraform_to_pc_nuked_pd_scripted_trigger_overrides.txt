@@ -2,7 +2,6 @@
 # this = planet
 eligible_pc_nuked_terraform_habitable = {
 	OR = {
-		# TODO
 		# PD basic dry
 		is_planet_class = pc_badlands
 		is_planet_class = pc_coastal
@@ -49,27 +48,28 @@ eligible_pc_nuked_terraform_habitable = {
 		is_planet_class = pc_swamp
 
 		# PD special
-		# TODO need to add links
-		# pc_reef - habitable cost
-		# pc_lichen
-		# pc_aquifer
-		# pc_lanthanide
-		# pc_supercon
-		# pc_glacio
-		# pc_eyeball
-		# pc_rogue
-		# pc_coral
-		# pc_storm
-		# pc_megaflora
-		# pc_salt
-		# pc_primal
-		# pc_karst
-		# pc_superhabitable
-		# pc_tidallylocked - not allowed since there isn't a corresponding pc_nuked
-		# pc_geothermal
-		# pc_biolumen
+		is_planet_class = pc_reef
+		is_planet_class = pc_lichen
+		is_planet_class = pc_aquifer
+		is_planet_class = pc_lanthanide
+		is_planet_class = pc_supercon
+		is_planet_class = pc_glacio
+		is_planet_class = pc_eyeball
+		is_planet_class = pc_rogue
+		is_planet_class = pc_coral
+		is_planet_class = pc_storm
+		is_planet_class = pc_megaflora
+		is_planet_class = pc_salt
+		is_planet_class = pc_primal
+		is_planet_class = pc_karst
+		is_planet_class = pc_superhabitable
+		# is_planet_class = pc_tidallylocked - not allowed since there isn't a corresponding pc_nuked
+		is_planet_class = pc_geothermal
+		is_planet_class = pc_biolumen
 
-		# TODO planetary habitats - they can convert into other types (see links for extra stuff!
+		# PD gaia
+		is_planet_class = pc_cold_gaia
+		is_planet_class = pc_hot_gaia
 
 		# TODO some/all exotics - at least pc_irradiated
 
@@ -91,7 +91,6 @@ eligible_pc_nuked_terraform_habitable = {
 # this = planet
 eligible_pc_nuked_terraform_hostile = {
 	OR = {
-		# TODO
 		# PD hostile
 		is_planet_class = pc_pdhive1
 		is_planet_class = pc_pdhive2
@@ -105,15 +104,26 @@ eligible_pc_nuked_terraform_hostile = {
 # assumes the terraformer meets technology/species requirements
 # this = planet
 eligible_pc_nuked_terraform_unhabitable = {
-	has_modifier = terraforming_candidate
-	OR = {
-		# TODO
-		# PD unhabitable
-		is_planet_class = pc_hothouse
+	AND = {
+		has_modifier = terraforming_candidate
+		OR = {
+			# PD unhabitable
+			is_planet_class = pc_hothouse
 
-		# built-in unhabitable
-		is_planet_class = pc_barren
-		is_planet_class = pc_barren_cold
-		is_planet_class = pc_frozen
+			# built-in unhabitable
+			is_planet_class = pc_barren
+			is_planet_class = pc_barren_cold
+			is_planet_class = pc_frozen
+		}
+	}
+	AND = {
+		has_modifier = hab_terraforming_candidate
+		OR = {
+			# PD planetary habitats
+			is_planet_class = pc_pd_hothouse_hab
+			is_planet_class = pc_pd_barren_hab
+			is_planet_class = pc_pd_barren_cold_hab
+			is_planet_class = pc_pd_frozen_hab
+		}
 	}
 }
