@@ -1,4 +1,8 @@
 name="\"Terraform\" to Tomb World: Planetary Diversity Compatibility"
+dependencies={
+	"\"Terraform\" to Tomb World"
+	"Planetary Diversity"
+}
 tags={
 	"Gameplay"
 }
