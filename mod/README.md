@@ -10,7 +10,7 @@ Adds terraforming links to change many any colonizable, non-artificial planet cl
 
 ## What Can't I Nuke?
 
-* as with the main mod, ecumenopolis planets cannot be converted (directly) to Tomb Worlds
+* As with the main mod, ecumenopolis planets cannot be converted (directly) to Tomb Worlds
 * Planetary Diversity adds special habitable classes intended only for use as special graphical variations - this mod does not add terraform links, and neither does PD provide any to/from the "display only" planet classes
 * Shrouded worlds - the Shroud is amused by your pitiful displays of material power
 * Most unhabitable planet classes (Hothouses are able to be terraformed when the Terraforming Candidate modifier is present)
