@@ -1,6 +1,6 @@
 # Overview
 
-Have you found yourself in a diverse galaxy, full of worlds that would better off with a healthy ~~glassing~~ "terrestrial resurfacing" from orbit?  Those colorful skies are far too cheerful to allow for proper introspection on the dead - and how could they ever be home without comfortingly high levels are background radiation?  This mod is an expansion of ["Terraform" to Tomb World](https://steamcommunity.com/sharedfiles/filedetails/?id=2625663437) that adds compatibility with [Planetary Diversity](https://steamcommunity.com/sharedfiles/filedetails/?id=819148835) (and its submods).
+Have you found yourself in a diverse galaxy, full of worlds that would better off with a healthy ~~glassing~~ "terrestrial resurfacing" from orbit?  Those colorful skies are far too cheerful to allow for proper introspection on the dead - and how could they ever be home without comfortingly high levels are background radiation?  This mod is an expansion of ["Terraform" to Tomb World](https://steamcommunity.com/workshop/filedetails/?id=2625663437) that adds compatibility with [Planetary Diversity](https://steamcommunity.com/workshop/filedetails/?id=819148835) (and its submods).
 
 Suggested by [NivMizzet Firemind](https://steamcommunity.com/profiles/76561198276935683).
 
@@ -25,20 +25,20 @@ Only adds new terraforming links, so it should not conflict with other mods that
 
 ### Required Dependency Mods
 
-* ["Terraform" to Tomb World](https://steamcommunity.com/sharedfiles/filedetails/?id=2625663437) for the events that apply the "terraforming" graphics and framework code to make this mod work
-* [Planetary Diversity](https://steamcommunity.com/sharedfiles/filedetails/?id=819148835) to provide new planet classes - otherwise this mod does nothing
+* ["Terraform" to Tomb World](https://steamcommunity.com/workshop/filedetails/?id=2625663437) for the events that apply the "terraforming" graphics and framework code to make this mod work
+* [Planetary Diversity](https://steamcommunity.com/workshop/filedetails/?id=819148835) to provide new planet classes - otherwise this mod does nothing
 
 ### Recommended Companion Mods
 
-* [Planetary Diversity - Unique Worlds](https://steamcommunity.com/sharedfiles/filedetails/?id=1740165239)
+* [Planetary Diversity - Unique Worlds](https://steamcommunity.com/workshop/filedetails/?id=1740165239)
 * [Planetary Diversity - More Arcologies](https://steamcommunity.com/workshop/filedetails/?id=1732447147)
-* [Planetary Diversity - Exotic Worlds](https://steamcommunity.com/sharedfiles/filedetails/?id=1732437279)
-* [Planetary Diversity - Planetary Habitats](https://steamcommunity.com/sharedfiles/filedetails/?id=1878751971)
-* [Planetary Diversity - Shroud Worlds](https://steamcommunity.com/sharedfiles/filedetails/?id=1960179456)
+* [Planetary Diversity - Exotic Worlds](https://steamcommunity.com/workshop/filedetails/?id=1732437279)
+* [Planetary Diversity - Planetary Habitats](https://steamcommunity.com/workshop/filedetails/?id=1878751971)
+* [Planetary Diversity - Shroud Worlds](https://steamcommunity.com/workshop/filedetails/?id=1960179456)
 
 ### Not Included in "Subtle Polish"
 
-This mod is intentionally not included in my modpack [Subtle Polish: A Collection of Fixes and Enhancements](https://steamcommunity.com/sharedfiles/filedetails/?id=2522974089) because it a compatibility patch for a specific, additional mod.  Will otherwise function alongside Subtle Polish when combined with Planetary Diversity.
+This mod is intentionally not included in my modpack [Subtle Polish: A Collection of Fixes and Enhancements](https://steamcommunity.com/workshop/filedetails/?id=2522974089) because it a compatibility patch for a specific, additional mod.  Will otherwise function alongside Subtle Polish when combined with Planetary Diversity.
 
 ## Known Issues
 
