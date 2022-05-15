@@ -1,6 +1,7 @@
 # assumes the terraformer meets technology/species requirements
 # this = planet
 eligible_pc_nuked_terraform_habitable = {
+	optimize_memory
 	OR = {
 		# PD basic dry
 		is_planet_class = pc_badlands
@@ -88,6 +89,7 @@ eligible_pc_nuked_terraform_habitable = {
 # assumes the terraformer meets technology/species requirements
 # this = planet
 eligible_pc_nuked_terraform_hostile = {
+	optimize_memory
 	OR = {
 		# PD hostile
 		is_planet_class = pc_pdhive1
@@ -102,6 +104,7 @@ eligible_pc_nuked_terraform_hostile = {
 # assumes the terraformer meets technology/species requirements
 # this = planet
 eligible_pc_nuked_terraform_unhabitable = {
+	optimize_memory
 	OR = {
 		AND = {
 			has_modifier = terraforming_candidate
