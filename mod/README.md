@@ -19,7 +19,7 @@ Adds terraforming links to change many any colonizable, non-artificial planet cl
 
 ## Compatibility
 
-Built for Stellaris version 3.3 "Libra."  Not compatible with achievements.
+Built for Stellaris version 3.4 "Cepheus."  Not compatible with achievements.
 
 Only adds new terraforming links, so it should not conflict with other mods that do not also add terraforming links from and to the same planet classes.  This submod adds compatibility for Planetary Diversity.
 
@@ -54,6 +54,7 @@ Overrides three scripted triggers and one scripted effect from "'Terraform' to T
 ## Changelog
 
 * 1.0.0 Initial version
+* 2.0.0 Update for Stellaris version 3.4 "Cepheus" - use memory optimization feature for effects and triggers
 
 ## Source Code
 
