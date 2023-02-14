@@ -2536,34 +2536,34 @@ terraform_link = {
 }
 
 # exotic
-terraform_link = {
-	from = pc_pdshroud
-	to = pc_nuked
-	resources = {
-		category = terraforming
-		cost = {
-			sr_zro = 500 # @terraforming_cost_unshroud from pd_shroud_terraform_links.txt
-		}
-	}
-	duration = @pc_nuked_from_opposite_candidate_duration
-	potential = {
-		from = { has_modifier = hab_terraforming_candidate }
-		potential_for_pc_nuked_terraform_country = yes
-	}
-	condition = {
-		has_technology = tech_climate_restoration
-		eligible_for_pc_nuked_terraform_country = yes
-	}
-	effect = {
-		post_terraform_to_pc_nuked = yes
-	}
-	ai_weight = {
-		weight = 0
-		modifier = {
-			factor = 0
-		}
-	}
-}
+# terraform_link = {
+# 	from = pc_pdshroud
+# 	to = pc_nuked
+# 	resources = {
+# 		category = terraforming
+# 		cost = {
+# 			sr_zro = 500 # @terraforming_cost_unshroud from pd_shroud_terraform_links.txt
+# 		}
+# 	}
+# 	duration = @pc_nuked_from_opposite_candidate_duration
+# 	potential = {
+# 		from = { has_modifier = hab_terraforming_candidate }
+# 		potential_for_pc_nuked_terraform_country = yes
+# 	}
+# 	condition = {
+# 		has_technology = tech_climate_restoration
+# 		eligible_for_pc_nuked_terraform_country = yes
+# 	}
+# 	effect = {
+# 		post_terraform_to_pc_nuked = yes
+# 	}
+# 	ai_weight = {
+# 		weight = 0
+# 		modifier = {
+# 			factor = 0
+# 		}
+# 	}
+# }
 
 terraform_link = {
 	from = pc_irradiated
