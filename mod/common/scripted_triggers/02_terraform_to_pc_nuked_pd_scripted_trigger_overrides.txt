@@ -48,25 +48,47 @@ eligible_pc_nuked_terraform_habitable = {
 		is_planet_class = pc_snow
 		is_planet_class = pc_swamp
 
-		# PD special
+		# PD rare
+		is_planet_class = pc_pd_petrified
+		is_planet_class = pc_pd_archipelago
+		is_planet_class = pc_pd_sinkhole
+		is_planet_class = pc_pd_iceberg
+		is_planet_class = pc_cryoflora
 		is_planet_class = pc_reef
 		is_planet_class = pc_lichen
 		is_planet_class = pc_aquifer
 		is_planet_class = pc_lanthanide
 		is_planet_class = pc_supercon
 		is_planet_class = pc_glacio
-		is_planet_class = pc_eyeball
 		is_planet_class = pc_rogue
 		is_planet_class = pc_coral
 		is_planet_class = pc_storm
 		is_planet_class = pc_megaflora
 		is_planet_class = pc_salt
 		is_planet_class = pc_primal
-		is_planet_class = pc_karst
-		is_planet_class = pc_superhabitable
-		# is_planet_class = pc_tidallylocked - not allowed since there isn't a corresponding pc_nuked
 		is_planet_class = pc_geothermal
 		is_planet_class = pc_biolumen
+
+		# PD tidally-locked can become pc_nuked_tl
+		is_planet_class = pc_eyeball
+		is_planet_class = pc_tidallylocked
+		is_planet_class = pc_wettidallylocked
+		is_planet_class = pc_tidallygaia
+		is_planet_class = pc_tidallyaquatic
+
+		# PD super-habitable can become pc_nuked_superhab
+		is_planet_class = pc_pd_cold_superhab
+		is_planet_class = pc_pd_dry_superhab
+		is_planet_class = pc_superhabitable
+		is_planet_class = pc_gaia_superhab
+		is_planet_class = pc_aquatic_superhab
+
+		# PD cave classes can become pc_nuked_cave
+		is_planet_class = pc_pd_cold_cave
+		is_planet_class = pc_pd_dry_cave
+		is_planet_class = pc_karst
+		is_planet_class = pc_gaia_cave
+		is_planet_class = pc_aquatic_cave
 
 		# PD gaia
 		is_planet_class = pc_cold_gaia
@@ -94,6 +116,12 @@ eligible_pc_nuked_terraform_hostile = {
 		# PD hostile
 		is_planet_class = pc_pdhive1
 		is_planet_class = pc_pdhive2
+		is_planet_class = pc_hivetidallylocked
+		is_planet_class = pc_hive_superhab
+		is_planet_class = pc_hive_cave
+		is_planet_class = pc_machinetidallylocked
+		is_planet_class = pc_machine_superhab
+		is_planet_class = pc_machine_cave
 
 		# built-in hostile
 		is_planet_class = pc_hive
@@ -109,22 +137,38 @@ eligible_pc_nuked_terraform_unhabitable = {
 		AND = {
 			has_modifier = terraforming_candidate
 			OR = {
-				# PD unhabitable
-				is_planet_class = pc_hothouse
-
-				# built-in unhabitable
 				is_planet_class = pc_barren
 				is_planet_class = pc_barren_cold
-				is_planet_class = pc_frozen
+
+				# PD unhabitable
+				is_planet_class = pc_hothouse
+				is_planet_class = pc_tidallylocked_barren
+				is_planet_class = pc_barren_superhab
+				is_planet_class = pc_barren_cave
+			}
+		}
+		AND = {
+			has_modifier = frozen_terraforming_candidate
+			is_planet_class = pc_frozen
+		}
+		AND = {
+			has_modifier = toxic_terraforming_candidate
+			OR = {
+				is_planet_class = pc_toxic
+
+				# PD toxic
+				is_planet_class = pc_pd_tidally_wasteland
+				is_planet_class = pc_pd_wasteland_superhab
+				is_planet_class = pc_pd_wasteland_cave
 			}
 		}
 		AND = {
 			has_modifier = hab_terraforming_candidate
 			OR = {
 				# PD planetary habitats
-				is_planet_class = pc_pd_hothouse_hab
 				is_planet_class = pc_pd_barren_hab
 				is_planet_class = pc_pd_barren_cold_hab
+				is_planet_class = pc_pd_hothouse_hab
 				is_planet_class = pc_pd_frozen_hab
 			}
 		}
@@ -134,5 +178,22 @@ eligible_pc_nuked_terraform_unhabitable = {
 		is_planet_class = pc_methane
 		is_planet_class = pc_sulfur
 		is_planet_class = pc_irradiated
+	}
+}
+
+# whether this species is considered "nuked"
+# this = species
+is_nuked_species = {
+	optimize_memory
+	OR = {
+		is_pd_nuked = yes
+		has_trait = trait_pc_nuked_preference
+		has_trait = trait_pc_irradiated_preference
+		has_trait = trait_survivor
+		has_trait = trait_plantoid_radiotrophic
+		has_trait = trait_harvested_radiotrophic
+		has_trait = trait_lithoid_radiotrophic
+		has_trait = trait_advanced_radiotrophic
+		has_trait = trait_presapient_irradiated
 	}
 }

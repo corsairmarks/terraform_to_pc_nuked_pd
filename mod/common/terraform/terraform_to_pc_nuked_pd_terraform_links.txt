@@ -1168,7 +1168,399 @@ terraform_link = {
 	}
 }
 
+terraform_link = {
+	from = pc_hivetidallylocked
+	to = pc_nuked_tl
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_hostile_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_hostile_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+		from = {
+			reroll_deposits = yes
+			clear_blockers = yes
+		}
+	}
+	ai_weight = {
+		weight = 3
+		modifier = {
+			weight = 2
+			is_hive_empire = no
+			special_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+		modifier = {
+			factor = 0
+			is_hive_empire = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_hive_superhab
+	to = pc_nuked_superhab
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_hostile_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_hostile_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+		from = {
+			reroll_deposits = yes
+			clear_blockers = yes
+		}
+	}
+	ai_weight = {
+		weight = 3
+		modifier = {
+			weight = 2
+			is_hive_empire = no
+			special_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+		modifier = {
+			factor = 0
+			is_hive_empire = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_hive_cave
+	to = pc_nuked_cave
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_hostile_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_hostile_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+		from = {
+			reroll_deposits = yes
+			clear_blockers = yes
+		}
+	}
+	ai_weight = {
+		weight = 3
+		modifier = {
+			weight = 2
+			is_hive_empire = no
+			special_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+		modifier = {
+			factor = 0
+			is_hive_empire = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_machinetidallylocked
+	to = pc_nuked_tl
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_hostile_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_hostile_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+		from = {
+			reroll_deposits = yes
+			clear_blockers = yes
+		}
+	}
+	ai_weight = {
+		weight = 3
+		modifier = {
+			weight = 2
+			is_machine_empire = no
+			special_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+		modifier = {
+			factor = 0
+			is_machine_empire = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_machine_superhab
+	to = pc_nuked_superhab
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_hostile_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_hostile_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+		from = {
+			reroll_deposits = yes
+			clear_blockers = yes
+		}
+	}
+	ai_weight = {
+		weight = 3
+		modifier = {
+			weight = 2
+			is_machine_empire = no
+			special_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+		modifier = {
+			factor = 0
+			is_machine_empire = yes
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_machine_cave
+	to = pc_nuked_cave
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_hostile_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_hostile_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+		from = {
+			reroll_deposits = yes
+			clear_blockers = yes
+		}
+	}
+	ai_weight = {
+		weight = 3
+		modifier = {
+			weight = 2
+			is_machine_empire = no
+			special_planet_should_weight_for_terraform_to_pc_nuked = yes
+		}
+		modifier = {
+			factor = 0
+			is_machine_empire = yes
+		}
+	}
+}
+
 # rare
+terraform_link = {
+	from = pc_pd_petrified
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		has_technology = tech_climate_restoration
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_pd_archipelago
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		has_technology = tech_climate_restoration
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_pd_sinkhole
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		has_technology = tech_climate_restoration
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_pd_iceberg
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		has_technology = tech_climate_restoration
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_cryoflora
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		has_technology = tech_climate_restoration
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
 terraform_link = {
 	from = pc_reef
 	to = pc_nuked
@@ -1189,6 +1581,7 @@ terraform_link = {
 				NOT = { has_modifier = holy_planet }
 			}
 		}
+		has_technology = tech_climate_restoration
 		eligible_for_pc_nuked_terraform_country = yes
 	}
 	effect = {
@@ -1216,6 +1609,7 @@ terraform_link = {
 		potential_for_pc_nuked_terraform_country = yes
 	}
 	condition = {
+		has_technology = tech_climate_restoration
 		from = {
 			OR = {
 				is_owned_by = root
@@ -1249,6 +1643,7 @@ terraform_link = {
 		potential_for_pc_nuked_terraform_country = yes
 	}
 	condition = {
+		has_technology = tech_climate_restoration
 		from = {
 			OR = {
 				is_owned_by = root
@@ -1282,6 +1677,7 @@ terraform_link = {
 		potential_for_pc_nuked_terraform_country = yes
 	}
 	condition = {
+		has_technology = tech_climate_restoration
 		from = {
 			OR = {
 				is_owned_by = root
@@ -1315,6 +1711,7 @@ terraform_link = {
 		potential_for_pc_nuked_terraform_country = yes
 	}
 	condition = {
+		has_technology = tech_climate_restoration
 		from = {
 			OR = {
 				is_owned_by = root
@@ -1348,6 +1745,7 @@ terraform_link = {
 		potential_for_pc_nuked_terraform_country = yes
 	}
 	condition = {
+		has_technology = tech_climate_restoration
 		from = {
 			OR = {
 				is_owned_by = root
@@ -1381,6 +1779,7 @@ terraform_link = {
 		potential_for_pc_nuked_terraform_country = yes
 	}
 	condition = {
+		has_technology = tech_climate_restoration
 		from = {
 			OR = {
 				is_owned_by = root
@@ -1414,6 +1813,7 @@ terraform_link = {
 		potential_for_pc_nuked_terraform_country = yes
 	}
 	condition = {
+		has_technology = tech_climate_restoration
 		from = {
 			OR = {
 				is_owned_by = root
@@ -1447,6 +1847,7 @@ terraform_link = {
 		potential_for_pc_nuked_terraform_country = yes
 	}
 	condition = {
+		has_technology = tech_climate_restoration
 		from = {
 			OR = {
 				is_owned_by = root
@@ -1480,6 +1881,7 @@ terraform_link = {
 		potential_for_pc_nuked_terraform_country = yes
 	}
 	condition = {
+		has_technology = tech_climate_restoration
 		from = {
 			OR = {
 				is_owned_by = root
@@ -1513,6 +1915,7 @@ terraform_link = {
 		potential_for_pc_nuked_terraform_country = yes
 	}
 	condition = {
+		has_technology = tech_climate_restoration
 		from = {
 			OR = {
 				is_owned_by = root
@@ -1546,6 +1949,7 @@ terraform_link = {
 		potential_for_pc_nuked_terraform_country = yes
 	}
 	condition = {
+		has_technology = tech_climate_restoration
 		from = {
 			OR = {
 				is_owned_by = root
@@ -1579,6 +1983,7 @@ terraform_link = {
 		potential_for_pc_nuked_terraform_country = yes
 	}
 	condition = {
+		has_technology = tech_climate_restoration
 		from = {
 			OR = {
 				is_owned_by = root
@@ -1612,6 +2017,7 @@ terraform_link = {
 		potential_for_pc_nuked_terraform_country = yes
 	}
 	condition = {
+		has_technology = tech_climate_restoration
 		from = {
 			OR = {
 				is_owned_by = root
@@ -1631,10 +2037,142 @@ terraform_link = {
 	}
 }
 
-# cave
+# tidally-locked
 terraform_link = {
-	from = pc_karst
-	to = pc_nuked
+	from = pc_eyeball
+	to = pc_nuked_tl
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_tidallylocked
+	to = pc_nuked_tl
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_wettidallylocked
+	to = pc_nuked_tl
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_tidallygaia
+	to = pc_nuked_tl
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_tidallyaquatic
+	to = pc_nuked_tl
 	resources = {
 		category = terraforming
 		cost = {
@@ -1667,8 +2205,8 @@ terraform_link = {
 
 # super-habitable
 terraform_link = {
-	from = pc_superhabitable
-	to = pc_nuked
+	from = pc_pd_cold_superhab
+	to = pc_nuked_superhab
 	resources = {
 		category = terraforming
 		cost = {
@@ -1699,10 +2237,274 @@ terraform_link = {
 	}
 }
 
-# tidally-locked
 terraform_link = {
-	from = pc_eyeball
-	to = pc_nuked
+	from = pc_pd_dry_superhab
+	to = pc_nuked_superhab
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_superhabitable
+	to = pc_nuked_superhab
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_gaia_superhab
+	to = pc_nuked_superhab
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_aquatic_superhab
+	to = pc_nuked_superhab
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+# cave
+terraform_link = {
+	from = pc_karst
+	to = pc_nuked_cave
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_pd_cold_cave
+	to = pc_nuked_cave
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_pd_dry_cave
+	to = pc_nuked_cave
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_gaia_cave
+	to = pc_nuked_cave
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_aquatic_cave
+	to = pc_nuked_cave
 	resources = {
 		category = terraforming
 		cost = {
@@ -1858,6 +2660,103 @@ terraform_link = {
 	}
 }
 
+# PD toxic (wasteland)
+terraform_link = {
+	from = pc_pd_tidally_wasteland
+	to = pc_nuked_tl
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_similar_candidate_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_similar_candidate_duration
+	potential = {
+		from = { has_modifier = toxic_terraforming_candidate }
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		has_ascension_perk = ap_detox
+		has_technology = tech_climate_restoration
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+		from = { detox_hangover = yes }
+	}
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 3
+			owner_main_species = { is_nuked_species = yes }
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_pd_wasteland_superhab
+	to = pc_nuked_superhab
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_similar_candidate_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_similar_candidate_duration
+	potential = {
+		from = { has_modifier = toxic_terraforming_candidate }
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		has_ascension_perk = ap_detox
+		has_technology = tech_climate_restoration
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+		from = { detox_hangover = yes }
+	}
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 3
+			owner_main_species = { is_nuked_species = yes }
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_pd_wasteland_cave
+	to = pc_nuked_cave
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_similar_candidate_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_similar_candidate_duration
+	potential = {
+		from = { has_modifier = toxic_terraforming_candidate }
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		has_ascension_perk = ap_detox
+		has_technology = tech_climate_restoration
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+		from = { detox_hangover = yes }
+	}
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 3
+			owner_main_species = { is_nuked_species = yes }
+		}
+	}
+}
+
 # unhabitable: similar
 terraform_link = {
 	from = pc_hothouse
@@ -1922,6 +2821,96 @@ terraform_link = {
 terraform_link = {
 	from = pc_pd_barren_hab
 	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_similar_candidate_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_similar_candidate_duration
+	potential = {
+		from = { has_modifier = hab_terraforming_candidate }
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		has_technology = tech_climate_restoration
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 3
+			owner_main_species = { is_nuked_species = yes }
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_tidallylocked_barren
+	to = pc_nuked_tl
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_similar_candidate_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_similar_candidate_duration
+	potential = {
+		from = { has_modifier = hab_terraforming_candidate }
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		has_technology = tech_climate_restoration
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 3
+			owner_main_species = { is_nuked_species = yes }
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_barren_superhab
+	to = pc_nuked_superhab
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_similar_candidate_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_similar_candidate_duration
+	potential = {
+		from = { has_modifier = hab_terraforming_candidate }
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		has_technology = tech_climate_restoration
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 3
+			owner_main_species = { is_nuked_species = yes }
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_barren_cave
+	to = pc_nuked_cave
 	resources = {
 		category = terraforming
 		cost = {
