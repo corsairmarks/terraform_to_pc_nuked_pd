@@ -12,6 +12,14 @@ post_terraform_to_pc_nuked = {
 			remove_modifier = terraforming_candidate
 		}
 		if = {
+			limit = { has_modifier = frozen_terraforming_candidate }
+			remove_modifier = frozen_terraforming_candidate
+		}
+		if = {
+			limit = { has_modifier = toxic_terraforming_candidate }
+			remove_modifier = toxic_terraforming_candidate
+		}
+		if = {
 			limit = { has_modifier = hab_terraforming_candidate }
 			remove_modifier = hab_terraforming_candidate
 		}
