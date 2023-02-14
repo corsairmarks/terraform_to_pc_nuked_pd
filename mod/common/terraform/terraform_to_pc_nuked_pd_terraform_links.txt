@@ -1093,34 +1093,6 @@ terraform_link = {
 	}
 }
 
-terraform_link = {
-	from = pc_irradiated
-	to = pc_nuked
-	resources = {
-		category = terraforming
-		cost = {
-			energy = @pc_nuked_from_habitable_energy_cost
-		}
-	}
-	duration = @pc_nuked_from_habitable_duration
-	potential = {
-		potential_for_pc_nuked_terraform_country = yes
-	}
-	condition = {
-		eligible_for_pc_nuked_terraform_country = yes
-	}
-	effect = {
-		from = { remove_modifier = radiotrophic }
-		post_terraform_to_pc_nuked = yes
-	}
-	ai_weight = {
-		weight = 0 # intentionally does not consider adding 1 weight
-		modifier = {
-			factor = 0
-		}
-	}
-}
-
 # hostile
 terraform_link = {
 	from = pc_pdhive1
@@ -1396,39 +1368,6 @@ terraform_link = {
 }
 
 terraform_link = {
-	from = pc_eyeball
-	to = pc_nuked
-	resources = {
-		category = terraforming
-		cost = {
-			energy = @pc_nuked_from_habitable_energy_cost
-		}
-	}
-	duration = @pc_nuked_from_habitable_duration
-	potential = {
-		potential_for_pc_nuked_terraform_country = yes
-	}
-	condition = {
-		from = {
-			OR = {
-				is_owned_by = root
-				NOT = { has_modifier = holy_planet }
-			}
-		}
-		eligible_for_pc_nuked_terraform_country = yes
-	}
-	effect = {
-		post_terraform_to_pc_nuked = yes
-	}
-	ai_weight = {
-		weight = 0
-		modifier = {
-			factor = 0
-		}
-	}
-}
-
-terraform_link = {
 	from = pc_rogue
 	to = pc_nuked
 	resources = {
@@ -1627,72 +1566,6 @@ terraform_link = {
 }
 
 terraform_link = {
-	from = pc_karst
-	to = pc_nuked
-	resources = {
-		category = terraforming
-		cost = {
-			energy = @pc_nuked_from_habitable_energy_cost
-		}
-	}
-	duration = @pc_nuked_from_habitable_duration
-	potential = {
-		potential_for_pc_nuked_terraform_country = yes
-	}
-	condition = {
-		from = {
-			OR = {
-				is_owned_by = root
-				NOT = { has_modifier = holy_planet }
-			}
-		}
-		eligible_for_pc_nuked_terraform_country = yes
-	}
-	effect = {
-		post_terraform_to_pc_nuked = yes
-	}
-	ai_weight = {
-		weight = 0
-		modifier = {
-			factor = 0
-		}
-	}
-}
-
-terraform_link = {
-	from = pc_superhabitable
-	to = pc_nuked
-	resources = {
-		category = terraforming
-		cost = {
-			energy = @pc_nuked_from_habitable_energy_cost
-		}
-	}
-	duration = @pc_nuked_from_habitable_duration
-	potential = {
-		potential_for_pc_nuked_terraform_country = yes
-	}
-	condition = {
-		from = {
-			OR = {
-				is_owned_by = root
-				NOT = { has_modifier = holy_planet }
-			}
-		}
-		eligible_for_pc_nuked_terraform_country = yes
-	}
-	effect = {
-		post_terraform_to_pc_nuked = yes
-	}
-	ai_weight = {
-		weight = 0
-		modifier = {
-			factor = 0
-		}
-	}
-}
-
-terraform_link = {
 	from = pc_geothermal
 	to = pc_nuked
 	resources = {
@@ -1758,6 +1631,108 @@ terraform_link = {
 	}
 }
 
+# cave
+terraform_link = {
+	from = pc_karst
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+# super-habitable
+terraform_link = {
+	from = pc_superhabitable
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+# tidally-locked
+terraform_link = {
+	from = pc_eyeball
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		from = {
+			OR = {
+				is_owned_by = root
+				NOT = { has_modifier = holy_planet }
+			}
+		}
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
 # exotic
 terraform_link = {
 	from = pc_pdshroud
@@ -1782,6 +1757,34 @@ terraform_link = {
 	}
 	ai_weight = {
 		weight = 0
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_irradiated
+	to = pc_nuked
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		from = { remove_modifier = radiotrophic }
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0 # intentionally does not consider adding 1 weight
 		modifier = {
 			factor = 0
 		}
