@@ -13,10 +13,9 @@ Adds terraforming links to change many any colonizable, non-artificial planet cl
 [*]Shrouded worlds - the Shroud is amused by your pitiful displays of material power
 [*]Most unhabitable planet classes (Hothouses are able to be terraformed when the Terraforming Candidate modifier is present)
 [*]All unique planet classes (Crystal, etc.) - PD does not allow terraforming these planet classes
-[*]Tidally-locked planets - they don't have an equivalent for a tidally-locked Tomb World
 [/list]
 [h2]Compatibility[/h2]
-Built for Stellaris version 3.4 "Cepheus."  Not compatible with achievements.
+Built for Stellaris version 3.6 "Orion."  Not compatible with achievements.
 
 Only adds new terraforming links, so it should not conflict with other mods that do not also add terraforming links from and to the same planet classes.  This submod adds compatibility for Planetary Diversity.
 
@@ -37,12 +36,13 @@ Only adds new terraforming links, so it should not conflict with other mods that
 This mod is intentionally not included in my modpack [url=https://steamcommunity.com/workshop/filedetails/?id=2522974089]Subtle Polish: A Collection of Fixes and Enhancements[/url] because it a compatibility patch for a specific, additional mod.  Will otherwise function alongside Subtle Polish when combined with Planetary Diversity.
 
 [h2]Known Issues[/h2]
-Overrides three scripted triggers and one scripted effect from "'Terraform' to Tomb World" in order to add Planetary Diversity support.  Expect to see four entries in the error.log file similar to these:
+Overrides four scripted triggers and one scripted effect from "'Terraform' to Tomb World" in order to add Planetary Diversity support.  Expect to see five entries in the error.log file similar to these:
 [code]
-[00:40:19][game_singleobjectdatabase.h:147]: Object with key: eligible_pc_nuked_terraform_habitable already exists, using the one at  file: common/scripted_triggers/terraform_to_pc_nuked_scripted_triggers.txt line: 82
-[00:40:19][game_singleobjectdatabase.h:147]: Object with key: eligible_pc_nuked_terraform_hostile already exists, using the one at  file: common/scripted_triggers/terraform_to_pc_nuked_scripted_triggers.txt line: 99
-[00:40:19][game_singleobjectdatabase.h:147]: Object with key: eligible_pc_nuked_terraform_unhabitable already exists, using the one at  file: common/scripted_triggers/terraform_to_pc_nuked_scripted_triggers.txt line: 108
-[00:40:19][game_singleobjectdatabase.h:147]: Object with key: post_terraform_to_pc_nuked already exists, using the one at  file: common/scripted_effects/terraform_to_pc_nuked_scripted_effects.txt line: 3
+[00:53:03][game_singleobjectdatabase.h:165]: Object with key: eligible_pc_nuked_terraform_habitable already exists, using the one at  file: common/scripted_triggers/02_terraform_to_pc_nuked_pd_scripted_trigger_overrides.txt line: 3
+[00:53:03][game_singleobjectdatabase.h:165]: Object with key: eligible_pc_nuked_terraform_hostile already exists, using the one at  file: common/scripted_triggers/02_terraform_to_pc_nuked_pd_scripted_trigger_overrides.txt line: 113
+[00:53:03][game_singleobjectdatabase.h:165]: Object with key: eligible_pc_nuked_terraform_unhabitable already exists, using the one at  file: common/scripted_triggers/02_terraform_to_pc_nuked_pd_scripted_trigger_overrides.txt line: 134
+[00:53:03][game_singleobjectdatabase.h:165]: Object with key: is_nuked_species already exists, using the one at  file: common/scripted_triggers/02_terraform_to_pc_nuked_pd_scripted_trigger_overrides.txt line: 186
+[00:53:03][game_singleobjectdatabase.h:165]: Object with key: post_terraform_to_pc_nuked already exists, using the one at  file: common/scripted_effects/02_terraform_to_pc_nuked_pd_scripted_effect_overrides.txt line: 3
 [/code]
 [h2]Changelog[/h2]
 See [url=https://steamcommunity.com/workshop/filedetails/changelog/2766967251]Change Notes[/url]

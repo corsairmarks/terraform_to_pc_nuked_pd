@@ -15,11 +15,10 @@ Adds terraforming links to change many any colonizable, non-artificial planet cl
 * Shrouded worlds - the Shroud is amused by your pitiful displays of material power
 * Most unhabitable planet classes (Hothouses are able to be terraformed when the Terraforming Candidate modifier is present)
 * All unique planet classes (Crystal, etc.) - PD does not allow terraforming these planet classes
-* Tidally-locked planets - they don't have an equivalent for a tidally-locked Tomb World
 
 ## Compatibility
 
-Built for Stellaris version 3.4 "Cepheus."  Not compatible with achievements.
+Built for Stellaris version 3.6 "Orion."  Not compatible with achievements.
 
 Only adds new terraforming links, so it should not conflict with other mods that do not also add terraforming links from and to the same planet classes.  This submod adds compatibility for Planetary Diversity.
 
@@ -42,19 +41,25 @@ This mod is intentionally not included in my modpack [Subtle Polish: A Collectio
 
 ## Known Issues
 
-Overrides three scripted triggers and one scripted effect from "'Terraform' to Tomb World" in order to add Planetary Diversity support.  Expect to see four entries in the error.log file similar to these:
+Overrides four scripted triggers and one scripted effect from "'Terraform' to Tomb World" in order to add Planetary Diversity support.  Expect to see five entries in the error.log file similar to these:
 
 ```
-[00:40:19][game_singleobjectdatabase.h:147]: Object with key: eligible_pc_nuked_terraform_habitable already exists, using the one at  file: common/scripted_triggers/terraform_to_pc_nuked_scripted_triggers.txt line: 82
-[00:40:19][game_singleobjectdatabase.h:147]: Object with key: eligible_pc_nuked_terraform_hostile already exists, using the one at  file: common/scripted_triggers/terraform_to_pc_nuked_scripted_triggers.txt line: 99
-[00:40:19][game_singleobjectdatabase.h:147]: Object with key: eligible_pc_nuked_terraform_unhabitable already exists, using the one at  file: common/scripted_triggers/terraform_to_pc_nuked_scripted_triggers.txt line: 108
-[00:40:19][game_singleobjectdatabase.h:147]: Object with key: post_terraform_to_pc_nuked already exists, using the one at  file: common/scripted_effects/terraform_to_pc_nuked_scripted_effects.txt line: 3
+[00:53:03][game_singleobjectdatabase.h:165]: Object with key: eligible_pc_nuked_terraform_habitable already exists, using the one at  file: common/scripted_triggers/02_terraform_to_pc_nuked_pd_scripted_trigger_overrides.txt line: 3
+[00:53:03][game_singleobjectdatabase.h:165]: Object with key: eligible_pc_nuked_terraform_hostile already exists, using the one at  file: common/scripted_triggers/02_terraform_to_pc_nuked_pd_scripted_trigger_overrides.txt line: 113
+[00:53:03][game_singleobjectdatabase.h:165]: Object with key: eligible_pc_nuked_terraform_unhabitable already exists, using the one at  file: common/scripted_triggers/02_terraform_to_pc_nuked_pd_scripted_trigger_overrides.txt line: 134
+[00:53:03][game_singleobjectdatabase.h:165]: Object with key: is_nuked_species already exists, using the one at  file: common/scripted_triggers/02_terraform_to_pc_nuked_pd_scripted_trigger_overrides.txt line: 186
+[00:53:03][game_singleobjectdatabase.h:165]: Object with key: post_terraform_to_pc_nuked already exists, using the one at  file: common/scripted_effects/02_terraform_to_pc_nuked_pd_scripted_effect_overrides.txt line: 3
 ```
 
 ## Changelog
 
 * 1.0.0 Initial version
 * 2.0.0 Update for Stellaris version 3.4 "Cepheus" - use memory optimization feature for effects and triggers
+* 2.1.0 Update for Stellaris version 3.6 "Orion" (and changes from version 3.5 "Fornax")
+    * Account for new radiotrophic variants
+    * Support changes to terraforming frozen worlds (you can still nuke them if they have the `frozen_terraforming_candidate` modifier)
+    * Improve check for "is a species "'nuked?'"
+    * Add terraform links for Planetary Diversity classes that are new (tidally-locked, super-habitable, and cave variants, plus five rare worlds)
 
 ## Source Code
 
