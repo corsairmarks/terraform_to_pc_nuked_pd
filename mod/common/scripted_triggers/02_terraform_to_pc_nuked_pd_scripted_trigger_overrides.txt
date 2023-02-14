@@ -186,7 +186,11 @@ eligible_pc_nuked_terraform_unhabitable = {
 is_nuked_species = {
 	optimize_memory
 	OR = {
-		is_pd_nuked = yes
+		ideal_planet_class = pc_nuked
+		ideal_planet_class = pc_nuked_tl
+		ideal_planet_class = pc_nuked_superhab
+		ideal_planet_class = pc_nuked_cave
+		ideal_planet_class = pc_nuked_relic
 		has_trait = trait_pc_nuked_preference
 		has_trait = trait_pc_irradiated_preference
 		has_trait = trait_survivor
