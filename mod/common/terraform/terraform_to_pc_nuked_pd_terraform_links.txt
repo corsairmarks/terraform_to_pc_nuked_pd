@@ -2593,6 +2593,90 @@ terraform_link = {
 	}
 }
 
+terraform_link = {
+	from = pc_irradiated_tidal
+	to = pc_nuked_tl
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		from = { remove_modifier = radiotrophic }
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0 # intentionally does not consider adding 1 weight
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_irradiated_superhab
+	to = pc_nuked_superhab
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		from = { remove_modifier = radiotrophic }
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0 # intentionally does not consider adding 1 weight
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+terraform_link = {
+	from = pc_irradiated_cave
+	to = pc_nuked_cave
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @pc_nuked_from_habitable_energy_cost
+		}
+	}
+	duration = @pc_nuked_from_habitable_duration
+	potential = {
+		potential_for_pc_nuked_terraform_country = yes
+	}
+	condition = {
+		eligible_for_pc_nuked_terraform_country = yes
+	}
+	effect = {
+		from = { remove_modifier = radiotrophic }
+		post_terraform_to_pc_nuked = yes
+	}
+	ai_weight = {
+		weight = 0 # intentionally does not consider adding 1 weight
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
 # gaia
 terraform_link = {
 	from = pc_cold_gaia
